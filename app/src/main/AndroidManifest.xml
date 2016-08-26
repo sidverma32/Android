@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.siddharth.myapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DoItLater"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Register"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".MainActivity1"
+            android:label="DoItLater"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".MainActivity2"
+            android:label="Login"
+            android:theme="@style/AppTheme.NoActionBar">
+              </activity>
+
+        <activity
+            android:name=".MainActivity3"
+            android:label="To-do-tasks"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+            <activity
+                 android:name=".MainActivity4"
+                android:label="Add task"
+                android:theme="@style/AppTheme.NoActionBar">
+            </activity>
+
+            <activity android:name=".Profile"
+             android:label="Profile Manager"
+                android:theme="@style/AppTheme.NoActionBar">
+            </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

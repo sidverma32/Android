@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.siddharth.myapp.MainActivity4"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/bt"
+                android:layout_gravity="right"
+                android:text="save"
+                 android:background="#ff99"
+                android:layout_marginRight="10dp"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:text="close"
+                android:id="@+id/bt1"
+                android:background="#ff44"
+                />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/summary">
+
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText7"
+        android:hint="Add summary"
+        android:layout_gravity="center_horizontal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/note">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="Add notes"
+        android:id="@+id/editText8"
+        android:layout_gravity="center_horizontal" />
+
+</android.support.design.widget.TextInputLayout>
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:id="@+id/calendarView"
+                android:layout_gravity="center_horizontal" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText13"
+                android:visibility="invisible"/>
+</android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
