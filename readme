@@ -1,2 +1,14 @@
-# Android
-https://cloud.githubusercontent.com/assets/10995431/21721698/7ac56a3a-d44f-11e6-80bb-192feb614fa4.jpg
+# Android(ToDo App/Do It Later)
+
+Summary: This project includes basic functionality of android app(like SQLite connetion,UI)and performing CRUD Operation.
+
+Details:
+  1. Login Page(with validations)
+  2. Registeration Page(with validations)
+  3. Recent Task/All Task Tabs
+  4. Add Task(Floating Button)
+  5. Profile Manager
+  
+  Screenshots:
+  
+ Login Page: https://cloud.githubusercontent.com/assets/10995431/21721698/7ac56a3a-d44f-11e6-80bb-192feb614fa4.jpg
